@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Matteo Romiti: Piano Journey</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Merriweather+Sans' rel='stylesheet' type='text/css'>
+    <link href="vendor/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Uncomment if notes or quotes contain math.
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+      });
+    </script>
+    <script type="text/javascript" src="vendor/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    -->
+  </head>
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle"
+                  data-toggle="collapse" data-target=".navbar-main-collapse">
+            <i class="fa fa-bars"></i>
+          </button>
+          <a class="navbar-brand page-scroll" href="https://matteoromiti.github.io/piano-journey">
+            <i class="fa fa-book"></i>  <span class="light">Piano</span> Journey
+          </a>
+        </div>
+
+        <!-- uncomment lines below to have different sections -->
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+          <ul class="nav navbar-nav">
+            <li class="hidden"><a href="#page-top"></a></li>
+
+            <li><a class="page-scroll" href="#tHead">Timeline</a></li>
+            <li><a class="page-scroll" href="#pHead">Progress</a></li>
+
+          </ul>
+        </div>
+        
+
+      </div> <!-- /.container -->
+    </nav>
+
+
+    <!-- Intro Header -->
+    <header class="intro">
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <h1>Piano Journey</h1>
+              <br>
+              <p>
+                <h3>
+                  An attemp to keep track of my little steps in learning to play the piano.
+                </h3>
+              </p>
+              <a href="#tHead" class="btn btn-circle page-scroll">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Timeline -->
+    <section id="tHead" class="container content-section">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <br>
+          <h2>Timeline</h2>
+          <h3>
+            Each musical composition appearing below (<span id="started-count"></span> in total)
+            has a date representing when I started (more or less) learning it. 
+          </h3>
+          <br>
+          <br>
+          <div id="started-timeline"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Progress -->
+    <section id="pHead" class="container content-section">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h2>Progress</h2>
+          <h3>
+            The stars represent how good I can or could play a piece
+            <br>
+            <br>
+            <ul>
+              <li>5 Stars: I played it at a recital</li>
+              <li>4 Stars: I can play it quite fluently</li>
+              <li>3 Stars: I can play it but not fluently</li>
+              <li>2 Stars: I can play more than half but not fluently</li>
+              <li>1 Star: I can play less than half and not fluently</li>
+            </ul>
+          </h3>
+          <div id="started"></div>
+
+        </div>
+      </div>
+    </section>
+
+    <script src="//static.getclicky.com/js" type="text/javascript"></script>
+
+    <script src="vendor/js/jquery.min.js"></script>
+    <script src="vendor/js/bootstrap.min.js"></script>
+    <script src="vendor/js/bootbox.js"></script>
+    <script src="vendor/js/js-yaml.min.js"></script>
+    <script src="vendor/js/handlebars.min.js"></script>
+    <script src="vendor/js/storyjs-embed.js"></script>
+    <script src="vendor/js/marked.min.js"></script>
+    <script src="vendor/js/crypto-js/crypto-js.js"></script>
+
+    <script src="js/grayscale.js"></script>
+    <script src="js/sp.js"></script>
+    <script src="js/piano-journey.js"></script>
+    <br>
+    <br>
+
+    <p>
+      This is freely hosted with
+      <a href="https://pages.github.com/" target="_blank">Github Pages</a>.<br>
+      The source is available on GitHub at
+      <a href="https://github.com/matteoromiti/piano-journey" target="_blank">matteoromiti/piano-journey</a>.
+    </p>
+    <p>
+      Crafted by <a href="http://bamos.github.io">Brandon Amos</a>.
+    </p>
+
+  </body>
+</html>
