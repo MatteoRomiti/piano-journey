@@ -83,17 +83,17 @@ function prettifyFinishedEntryInPlace(entry) {
 }
 
 function loadLists() {
-    if (!isPermalink) {
-        getTemplateAjax('templates/to-read.hbars.html', function(tmpl) {
-            loadYAML("to-read", function(yaml) {
-                yaml.sort(function(a,b) {
-                    return a.author.localeCompare(b.author);
-                });
-                $("#to-read").html(tmpl(yaml));
-                $("#to-read-count").append(yaml.length);
-            });
-        });
-    }
+    // if (!isPermalink) {
+    //     getTemplateAjax('templates/to-read.hbars.html', function(tmpl) {
+    //         loadYAML("to-read", function(yaml) {
+    //             yaml.sort(function(a,b) {
+    //                 return a.author.localeCompare(b.author);
+    //             });
+    //             $("#to-read").html(tmpl(yaml));
+    //             $("#to-read-count").append(yaml.length);
+    //         });
+    //     });
+    // }
 
     getTemplateAjax('templates/started.hbars.html', function(tmpl) {
         loadYAML("started", function(yamlUnfiltered) {
@@ -148,16 +148,17 @@ function loadLists() {
         });
     });
 
-    if (!isPermalink) {
-        getTemplateAjax('templates/compilations.hbars.html', function(tmpl) {
-            loadYAML("compilations", function(yaml) {
-                yaml.sort(function(a,b) {
-                    return a.title.localeCompare(b.title);
-                });
-                $("#compilations").html(tmpl(yaml));
-            });
-        });
-    }
+    // if (!isPermalink) {
+    //     getTemplateAjax('templates/compilations.hbars.html', function(tmpl) {
+    //         loadYAML("compilations", function(yaml) {
+    //             yaml.sort(function(a,b) {
+    //                 return a.title.localeCompare(b.title);
+    //             });
+    //             $("#compilations").html(tmpl(yaml));
+    //         });
+    //     });
+    // }
+
 }
 
 function showModal(title,yaml,idx,subfield) {
@@ -234,14 +235,14 @@ $(document).ready(function() {
     params = getQueryParams(document.location.search);
     isPermalink = 'book' in params;
 
-    quotes_body_tmpl = null;
-    getTemplateAjax('templates/quotes-body.hbars.html', function(tmpl) {
-        quotes_body_tmpl = tmpl;
-    });
-    notes_body_tmpl = null;
-    getTemplateAjax('templates/notes-body.hbars.html', function(tmpl) {
-        notes_body_tmpl = tmpl;
-    });
+    // quotes_body_tmpl = null;
+    // getTemplateAjax('templates/quotes-body.hbars.html', function(tmpl) {
+    //     quotes_body_tmpl = tmpl;
+    // });
+    // notes_body_tmpl = null;
+    // getTemplateAjax('templates/notes-body.hbars.html', function(tmpl) {
+    //     notes_body_tmpl = tmpl;
+    // });
 
     registerHandlebarsHelpers();
     loadLists();
